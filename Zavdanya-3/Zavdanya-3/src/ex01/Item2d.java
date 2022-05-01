@@ -6,7 +6,7 @@ import java.util.Arrays;
 /**
  * Stores the initial data and the result of calculations.
  *
- * @author Vlada
+ * @author Maksim
  * @version 1.0
  */
 
@@ -85,7 +85,7 @@ public class Item2d implements Serializable {
     }
 
     /**
-     * Setting values  {@linkplain Item2d#onesNumber} è {@linkplain Item2d#arguments}
+     * Setting values  {@linkplain Item2d#onesNumber} Ã¨ {@linkplain Item2d#arguments}
      *
      * @param onesNumber - value for {@linkplain Item2d#onesNumber}
      * @param arguments - value for {@linkplain Item2d#arguments}
