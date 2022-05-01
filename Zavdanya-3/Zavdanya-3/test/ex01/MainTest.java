@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * ��������� ������������ ������������� �������.
  *
- * @author Vlada
+ * @author Maksim
  * @version 1.0
  */
 @SuppressWarnings("SpellCheckingInspection")
@@ -37,26 +37,26 @@ public class MainTest {
      * �������� ������������. ������������ �������������� ������.
      */
     @Test
-    public void testRestore() {
+                  public void testRestore() {
         Calc calc = new Calc();
         byte onesNumber;
-        double []arguments;
+                   double []arguments;
         for (int ctr = 0; ctr < 360; ctr++) {
             arguments = new double[]{ctr, ctr, 360 - ctr, 360 - ctr};
-            onesNumber = calc.init(arguments);
+                           onesNumber = calc.init(arguments);
             try {
                 calc.save();
             } catch (IOException e) {
                 Assert.fail(e.getMessage());
             }
-            calc.init(new double[]{360 - ctr, ctr, ctr, 360 - ctr});
-            try {
+                      calc.init(new double[]{360 - ctr, ctr, ctr, 360 - ctr});
+                           try {
                 calc.restore();
             } catch (Exception e) {
                 Assert.fail(e.getMessage());
             }
             assertEquals(onesNumber, calc.getResult().getOnesNumber());
-            assertArrayEquals(arguments, calc.getResult().getArguments());
+                        assertArrayEquals(arguments, calc.getResult().getArguments());
         }
     }
 }
