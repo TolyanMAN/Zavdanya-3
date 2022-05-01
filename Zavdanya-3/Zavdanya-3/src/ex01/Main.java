@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
  * Calculation and display of results.
  * Contains the implementation of the static main() method.
  *
- * @author Vlada
+ * @author Maksim
  * @version 1.0
  * @see Main#main
  */
