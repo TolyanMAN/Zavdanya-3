@@ -5,7 +5,7 @@ import java.io.*;
 /**
  * Contains the implementation of methods for calculating and displaying results.
  *
- * @author Vlada
+ * @author Maksim
  * @version 1.0
  */
 
